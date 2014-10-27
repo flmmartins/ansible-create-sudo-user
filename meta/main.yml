@@ -1,0 +1,30 @@
+---
+galaxy_info:
+  author: Fernanda Martins
+  description: A role to create an user
+  min_ansible_version: 1.4
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+    - any
+  - name: Fedora
+    versions:
+    - all
+  - name: GenericBSD
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: GenericLinux
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all  
+  - name: CentOS
+    versions:
+    - all
+  categories:
+  - system

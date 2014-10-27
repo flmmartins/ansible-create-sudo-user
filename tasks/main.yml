@@ -1,0 +1,22 @@
+---
+  - debug: msg="Don't forget to define a variable with user and password so this workflow can run"
+  - debug: msg="Your user is {{ user }}"
+  - debug: msg="Your password is {{ password }}"
+
+  - name: Create user
+    user:
+      name={{ user }}
+      password={{ password }}
+      generate_ssh_key=yes
+      state=present
+      shell=/bin/bash
+    sudo: yes
+
+  - name: Adding user to sudoers
+    template:
+      src=sudo_user.j2
+      dest=/etc/sudoers.d/sudo_user
+      mode=0440
+      owner=root
+      group=root
+    sudo: yes
