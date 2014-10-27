@@ -1,4 +1,4 @@
-Role Name
+ansible-create-sudo-user
 ========
 
 Create a user with sudo permissions and without prompting for sudo password.
@@ -18,6 +18,7 @@ Role Variables
 Inside defaults:
 
 user (username you which to create)
+
 password (password you generated above)
 
 
