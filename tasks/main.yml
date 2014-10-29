@@ -9,7 +9,6 @@
       password={{ password }}
       generate_ssh_key=yes
       state=present
-      shell=/bin/bash
     sudo: yes
 
   - name: Adding user to sudoers
